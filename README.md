@@ -18,6 +18,8 @@
   source /usr/local/bin/virtualenvwrapper.sh
   ```
   
+  Restart your terminal or `$ source .bashrc`
+  
   To install on **windows** use:
   
   `$ pip install virtualenvwrapper-win`
