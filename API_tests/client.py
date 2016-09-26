@@ -13,7 +13,7 @@ class DistanceAPIClient(object):
             "authentication": "key={0}".format(os.environ['API_KEY']),
             "Accept": "application/json"
             }
-            
+
         logging.basicConfig(level=logging.INFO, stream=sys.stdout)
         logging.getLogger("requests").setLevel(logging.ERROR)
         self.log = logging.getLogger(__name__)
