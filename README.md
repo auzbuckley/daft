@@ -49,6 +49,8 @@
 3. Either inside you virtual env, or on your local installation of python, change directory to `daft_tests/` directory and run:
 
   `$ pip install -r requirements.txt`
+  
+4. Ensure that you have Mozilla Firefox installed. (The frontend tests use the firefox driver.)
 
 ## Frontend Tests
 To run frontend tests, change directory to the `frontend_tests/` directory:
