@@ -45,8 +45,8 @@ def step_impl(context, max_price, max_bedrooms, max_bathrooms, property_type):
 @when('I submit advanced search')
 def step_impl(context):
     context.advancedsearchpage.click_advanced_search_button()
-    
-    
+
+
 @then('I should see a list of results that match my search criteria')
 def step_impl(context):
     number = randint(1, 10)
@@ -58,7 +58,7 @@ def step_impl(context):
     except AssertionError:
         print("{0} is not less than or equal to {1}".format(item_price, max_price))
         raise
-        
+
     item_number_of_beds = context.resultspage.get_item_number_of_beds(item)
     max_bedrooms = context.advancedsearchpage.SEARCH_CRITERIA["max_bedrooms"]
     try:
@@ -66,7 +66,7 @@ def step_impl(context):
     except AssertionError:
         print("{0} is not less than or equal to {1}".format(item_number_of_beds, max_bedrooms))
         raise
-        
+
     item_number_of_baths = context.resultspage.get_item_number_of_baths(item)
     max_bathrooms = context.advancedsearchpage.SEARCH_CRITERIA["max_bathrooms"]
     try:
@@ -74,7 +74,7 @@ def step_impl(context):
     except AssertionError:
         print("{0} is not less than or equal to {1}".format(item_number_of_baths, max_bathrooms))
         raise
-        
+
     item_property_type = context.resultspage.get_item_property_type(item)
     property_type = context.advancedsearchpage.SEARCH_CRITERIA["property_type"]
     try:
