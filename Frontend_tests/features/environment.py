@@ -4,7 +4,7 @@ import logging
 
 
 def before_all(context):
-    context.driver = webdriver.Firefox()
+    context.driver = webdriver.Chrome()
 
 
 def after_all(context):
