@@ -53,7 +53,7 @@ class TestDistanceAPI(object):
         }
         self.client.get_distance(data, output="", expected_code=404)
 
-    def test_results_in_language_specified_as_optional_parameter(self):
+    def test_results_returned_in_specified_language(self):
         data = {
             "origins": "Limerick",
             "destinations": "Galway",
@@ -65,7 +65,7 @@ class TestDistanceAPI(object):
         french = "Galway, Irlande"
         assert french.decode("utf-8") in resp.json()["destination_addresses"]
 
-    def test_results_in_domain_language_when_no_supported_language_parameter(self):
+    def test_results_returned_in_default_language(self):
         data = {
             "origins": "Limerick",
             "destinations": "Galway",
