@@ -1,4 +1,4 @@
-# daft.ie tests
+# README
 
 ## Setup
 1. Ensure you have python 2.7 or later installed https://www.python.org/downloads/. To check what version you may already have installed, you can type:
