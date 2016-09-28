@@ -27,7 +27,7 @@
   
   `$ pip install virtualenvwrapper --ignore-installed six`
   
-  Add the following two lines to the bottom of your `.bashrc`, or equivalent files (such as `.zshrc`) []:
+  Add the following two lines to the bottom of your `.bashrc`, or equivalent files (such as `.zshrc`) NOTE: you may need to create a `.bashrc` file if you do not have one:
 
   ```
   export WORKON_HOME=$HOME/.virtualenvs
